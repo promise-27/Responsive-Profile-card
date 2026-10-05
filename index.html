@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 class="container__h2">Registration</h2>
+      <form action="#">
+        <div class="container__userdetails">
+          <div class="container__input">
+            <span class="container__details">Full Name</span>
+            <input type="text" placeholder="Enter your full name" required />
+          </div>
+
+          <div class="container__input">
+            <span class="container__details">Username</span>
+            <input type="text" placeholder="Enter your username" required />
+          </div>
+
+          <div class="container__input">
+            <span class="container__details">Email</span>
+            <input type="email" placeholder="Enter your email" required />
+          </div>
+
+          <div class="container__input">
+            <span class="container__details">Phone Number</span>
+            <input type="tel" placeholder="Enter your number" required />
+          </div>
+
+          <div class="container__input">
+            <span class="container__details">Password</span>
+            <input type="password" placeholder="Enter your password" required />
+          </div>
+
+          <div class="container__input">
+            <span class="container__details">Confirm Password</span>
+            <input
+              type="password"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="gender-details">
+          <h3 class="gender__h3">Gender</h3>
+          <div class="container__gender">
+            <label for="dot-1">
+              <span class="gender"
+                ><input
+                  type="radio"
+                  name="gender"
+                  id="dot-1"
+                  required
+                />Female</span
+              >
+            </label>
+
+            <label for="dot-2">
+              <span class="gender"
+                ><input
+                  type="radio"
+                  name="gender"
+                  id="dot-2"
+                  required
+                />Male</span
+              >
+            </label>
+
+            <label for="dot-3">
+              <span class="gender"
+                ><input type="radio" name="gender" id="dot-3" required />Prefer
+                not to say</span
+              >
+            </label>
+          </div>
+        </div>
+
+        <div class="btn">
+          <button class="container__register" type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.container {
+  max-width: 700px;
+  height: 100%;
+  background-color: whitesmoke;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.container__h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.container__userdetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container__input {
+  width: calc(50% - 10px);
+  margin: 20px 0 12px 0;
+}
+
+.container__input input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  border-bottom-width: 2px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.container__input input:hover,
+.container__input input:focus,
+.container__input input:valid {
+  border-color: #9b59b6;
+}
+
+.container__details {
+  font-weight: 530;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.gender__h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transform: translateY(15px);
+}
+
+.container__gender span {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.container__gender {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 14px 0;
+}
+
+.gender input {
+  margin-right: 5px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.btn button {
+  width: 60%;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color: whitesmoke;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn button:hover {
+  background: #9b59b6;
+}
+
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .container__input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .container__gender {
+    width: 100%;
+  }
+
+  .container__userdetails {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .container__userdetails::-webkit-scrollbar {
+    width: 10;
+  }
+}
